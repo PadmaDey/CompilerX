@@ -1,0 +1,15 @@
+############start zookeeper#####################
+cd C:\kafka_2.12-3.7.0
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+############start kafka server#####################
+cd C:\kafka_2.12-3.7.0
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+############end zookeeper#####################
+cd C:\kafka_2.12-3.7.0
+bin\windows\zookeeper-server-stop.bat
+
+############end kafka server#####################
+cd C:\kafka_2.12-3.7.0
+bin\windows\kafka-server-stop.bat
